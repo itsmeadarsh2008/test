@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travse Login Or Signin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Poppins:wght@200&family=Roboto+Serif:wght@200&display=swap");
+
+    /*font-family: 'Fira Code', monospace;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Serif', sans-serif;*/
+    h1 {
+      font-family: "Roboto Serif", sans-serif;
+    }
+    body {
+        background: url('https://gist.githubusercontent.com/GithubyAdarsh/dd1d8c51515b0fa3127052704d976c11/raw/39f354930e387ab09889bd70ff0f6c5d02aa0017/wave.svg')
+    }
+    .user {
+      padding: 20px;
+      text-align: center;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px 0px;
+      max-width: 400px;
+      background-color: rgba(255, 255, 255, 0.397);
+    }
+    .user:hover {
+        background-color: rgba(255, 255, 255, 0.514)
+    }
+    input[type="email"],
+    input[type="password"],
+    input[type="text"] {
+      font-family: "Poppins", sans-serif;
+      padding: 12px;
+      border: 2px solid #ccc;
+      border-radius: 6px;
+      margin: 10px;
+      font-size: 15px;
+    }
+    input[type="email"]:focus,input[type="password"]:focus,
+    input[type="text"]:focus {
+      border: 2px solid black;
+      width: 60%;
+    }
+    button[type="submit"] {
+      background-color: rgb(96, 255, 167);
+      border: 0px;
+      font-size: 20px;
+      font-family: "Fira Code", monospace;
+      border-radius: 6px;
+      padding: 12px;
+    }
+    button[type="submit"]:hover {
+      background-color: rgb(86, 214, 144);
+      color: white;
+    }
+    button[type="submit"]:focus {
+      transition: 0.7s;
+      border: 5px solid rgb(104, 206, 150);
+      width: 50%;
+      opacity: 0.5;
+      position: static;
+    }
+    .RememberMeDiv {
+      text-align: center;
+      font-family: "Fira Code", monospace;
+      margin-bottom: 5px;
+      border-radius: 6px;
+      padding: 12px;
+    }
+    .showpass {
+      font-size: 30px;
+      border: 0px;
+    }
+    .showpass:hover {
+      color: cadetblue;
+    }
+    .content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  </style>
+  <body>
+    <div class="user content" id="loginSection">
+        <form action="/templates/user.html">
+            <h1>Travse Login Or SignIn</h1>
+            <input type="email" name="Email" id="email" placeholder="Email">
+            <input type="password" name="Password" id="password" placeholder="Password">
+            <button type="submit">Head On!</button> <br>
+            <div class="RememberMeDiv">
+                <input type="checkbox" name="RememberMe" id="RememberMe">
+                <label for="RememberMe">Remember Me</label>
+            </div> 
+            <a href="#" style="font-family: 'Fira Code', monospace; text-decoration: none;">Forgot Password?</a>
+        </form>
+        <button class="showpass"><i class="bi bi-eye-fill"></i></button>
+    </div>
+  </body>
+</html>
